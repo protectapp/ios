@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DashboardVC" customModule="Protect_Security" customModuleProvider="target">
+            <connections>
+                <outlet property="imgLogo" destination="rmf-8L-hMU" id="qKm-0u-mbu"/>
+                <outlet property="locationLabel" destination="czx-cQ-XLZ" id="GMe-fL-0LK"/>
+                <outlet property="logoHeightContaint" destination="RyE-lC-uva" id="PR3-1D-dsf"/>
+                <outlet property="logoWidthConst" destination="09f-cc-gr7" id="0Ut-dL-3dP"/>
+                <outlet property="scrollView" destination="96s-dg-M5S" id="lqt-Od-VZo"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="actionImages" destination="11B-Km-COt" collectionClass="NSMutableArray" id="Upj-A7-nl3"/>
+                <outletCollection property="actionImages" destination="1xy-bK-d6Z" collectionClass="NSMutableArray" id="Swn-E6-uaa"/>
+                <outletCollection property="actionImages" destination="IWp-jQ-Hwp" collectionClass="NSMutableArray" id="Qwm-rV-dVn"/>
+                <outletCollection property="actionImages" destination="2RH-MA-vPc" collectionClass="NSMutableArray" id="pd7-Rf-iJH"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96s-dg-M5S">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="protectapp_logo_dash" translatesAutoresizingMaskIntoConstraints="NO" id="rmf-8L-hMU">
+                            <rect key="frame" x="99" y="0.0" width="177" height="158"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="177" id="09f-cc-gr7"/>
+                                <constraint firstAttribute="height" constant="158" id="RyE-lC-uva"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="qr6-LX-g8c">
+                            <rect key="frame" x="20" y="178" width="335" height="42.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOb-18-AHr">
+                                    <rect key="frame" x="110" y="0.0" width="115" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" red="0.20784313730000001" green="0.20784313730000001" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Searching" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czx-cQ-XLZ">
+                                    <rect key="frame" x="129" y="22" width="77" height="20.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.10196078431372549" green="0.28627450980392155" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xYj-xT-vRi">
+                            <rect key="frame" x="20" y="260.5" width="335" height="298"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f7C-rB-qkB">
+                                    <rect key="frame" x="20.5" y="0.0" width="294" height="298"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fbn-Nc-MIc">
+                                            <rect key="frame" x="0.0" y="0.0" width="294" height="149"/>
+                                            <subviews>
+                                                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PALaw_dash" translatesAutoresizingMaskIntoConstraints="NO" id="11B-Km-COt" customClass="InteractiveImageview" customModule="Protect_Security" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="147" height="149"/>
+                                                </imageView>
+                                                <imageView tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAFire_dash" translatesAutoresizingMaskIntoConstraints="NO" id="1xy-bK-d6Z" customClass="InteractiveImageview" customModule="Protect_Security" customModuleProvider="target">
+                                                    <rect key="frame" x="147" y="0.0" width="147" height="149"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RoE-LH-ql1">
+                                            <rect key="frame" x="0.0" y="149" width="294" height="149"/>
+                                            <subviews>
+                                                <imageView tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAMed_dash" translatesAutoresizingMaskIntoConstraints="NO" id="IWp-jQ-Hwp" customClass="InteractiveImageview" customModule="Protect_Security" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="147" height="149"/>
+                                                </imageView>
+                                                <imageView tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="PAAssist_dash" translatesAutoresizingMaskIntoConstraints="NO" id="2RH-MA-vPc" customClass="InteractiveImageview" customModule="Protect_Security" customModuleProvider="target">
+                                                    <rect key="frame" x="147" y="0.0" width="147" height="149"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="f7C-rB-qkB" secondAttribute="bottom" id="4d6-Ht-73r"/>
+                                <constraint firstItem="f7C-rB-qkB" firstAttribute="centerX" secondItem="xYj-xT-vRi" secondAttribute="centerX" id="dwe-ez-YEy"/>
+                                <constraint firstItem="f7C-rB-qkB" firstAttribute="top" secondItem="xYj-xT-vRi" secondAttribute="top" id="l0u-X7-B76"/>
+                                <constraint firstItem="f7C-rB-qkB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xYj-xT-vRi" secondAttribute="leading" id="n0k-Hu-7DS"/>
+                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="f7C-rB-qkB" secondAttribute="trailing" id="zjQ-sZ-6JC"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rmf-8L-hMU" firstAttribute="top" secondItem="96s-dg-M5S" secondAttribute="top" id="5Np-1z-XZA"/>
+                        <constraint firstItem="qr6-LX-g8c" firstAttribute="top" secondItem="rmf-8L-hMU" secondAttribute="bottom" constant="20" id="6vv-Ww-lXY"/>
+                        <constraint firstItem="xYj-xT-vRi" firstAttribute="top" secondItem="qr6-LX-g8c" secondAttribute="bottom" constant="40" id="Eif-EM-sam"/>
+                        <constraint firstItem="qr6-LX-g8c" firstAttribute="leading" secondItem="96s-dg-M5S" secondAttribute="leading" constant="20" id="InT-kI-me6"/>
+                        <constraint firstItem="xYj-xT-vRi" firstAttribute="leading" secondItem="qr6-LX-g8c" secondAttribute="leading" id="O1I-yp-pff"/>
+                        <constraint firstItem="xYj-xT-vRi" firstAttribute="trailing" secondItem="qr6-LX-g8c" secondAttribute="trailing" id="V4d-KX-QoM"/>
+                        <constraint firstAttribute="bottom" secondItem="xYj-xT-vRi" secondAttribute="bottom" constant="30" id="aeN-xN-dxl"/>
+                        <constraint firstItem="rmf-8L-hMU" firstAttribute="centerX" secondItem="96s-dg-M5S" secondAttribute="centerX" id="lLH-DE-61D"/>
+                        <constraint firstAttribute="trailing" secondItem="qr6-LX-g8c" secondAttribute="trailing" constant="20" id="va7-7X-Qvk"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="96s-dg-M5S" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BM9-Oq-bsB"/>
+                <constraint firstItem="96s-dg-M5S" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="VON-Mx-S3M"/>
+                <constraint firstAttribute="trailing" secondItem="qr6-LX-g8c" secondAttribute="trailing" constant="20" id="cvc-qZ-YVX"/>
+                <constraint firstItem="qr6-LX-g8c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="hrs-63-2bW"/>
+                <constraint firstItem="96s-dg-M5S" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qPO-QK-Zlg"/>
+                <constraint firstItem="96s-dg-M5S" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="w15-wZ-hSX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="31.5" y="110.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="PAAssist_dash" width="147" height="149"/>
+        <image name="PAFire_dash" width="147" height="149"/>
+        <image name="PALaw_dash" width="147" height="149"/>
+        <image name="PAMed_dash" width="147" height="149"/>
+        <image name="protectapp_logo_dash" width="177" height="158"/>
+    </resources>
+</document>

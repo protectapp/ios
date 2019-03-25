@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="ChatMessageCell" customModule="Protect_Security" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="337" height="115"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="337" height="115"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ys4-ce-24k" customClass="BubbleView" customModule="Protect_Security" customModuleProvider="target">
+                        <rect key="frame" x="48.5" y="0.0" width="240" height="115"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="&lt;time&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="omj-mt-IKR">
+                                <rect key="frame" x="189" y="96.5" width="41" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80392156859999997" green="0.16078431369999999" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="999" constant="240" id="PD7-ww-oqK"/>
+                            <constraint firstAttribute="trailing" secondItem="omj-mt-IKR" secondAttribute="trailing" constant="10" id="XlZ-6I-GrZ"/>
+                            <constraint firstAttribute="bottom" secondItem="omj-mt-IKR" secondAttribute="bottom" constant="5" id="abT-KR-YLN"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7P-WX-leD">
+                        <rect key="frame" x="56.5" y="8" width="224" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="224" id="jUo-N6-zQh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Q7P-WX-leD" firstAttribute="leading" secondItem="Ys4-ce-24k" secondAttribute="leading" constant="8" id="7zP-Su-3Xe"/>
+                <constraint firstItem="Q7P-WX-leD" firstAttribute="top" secondItem="Ys4-ce-24k" secondAttribute="top" constant="8" id="EtS-ip-Nbf"/>
+                <constraint firstItem="Ys4-ce-24k" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MFQ-Nc-tMc"/>
+                <constraint firstAttribute="trailing" secondItem="Ys4-ce-24k" secondAttribute="trailing" priority="999" constant="15" id="PNg-JL-mj8"/>
+                <constraint firstAttribute="bottom" secondItem="Ys4-ce-24k" secondAttribute="bottom" id="alV-oV-sbz"/>
+                <constraint firstItem="Ys4-ce-24k" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" priority="999" constant="15" id="gnu-Mh-2a3"/>
+            </constraints>
+            <size key="customSize" width="337" height="115"/>
+            <connections>
+                <outlet property="bubbleLeadingConstraint" destination="gnu-Mh-2a3" id="IBw-9n-4gs"/>
+                <outlet property="bubbleTopConstraint" destination="MFQ-Nc-tMc" id="c6u-2d-Jft"/>
+                <outlet property="bubbleTrailingConstraint" destination="PNg-JL-mj8" id="bRw-3b-cPM"/>
+                <outlet property="bubbleView" destination="Ys4-ce-24k" id="wR9-UJ-XiN"/>
+                <outlet property="bubbleWidthConstraint" destination="PD7-ww-oqK" id="ZxQ-FD-Clc"/>
+                <outlet property="messageWidthConstraint" destination="jUo-N6-zQh" id="pRq-sl-fqI"/>
+                <outlet property="textView" destination="Q7P-WX-leD" id="Dqn-cL-Vb4"/>
+                <outlet property="timeLabel" destination="omj-mt-IKR" id="P37-Zk-mbo"/>
+            </connections>
+            <point key="canvasLocation" x="82.5" y="114.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

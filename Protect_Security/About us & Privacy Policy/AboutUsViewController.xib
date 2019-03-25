@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutUsViewController" customModule="Protect_Security" customModuleProvider="target">
+            <connections>
+                <outlet property="aboutusWebView" destination="zLY-pS-Uek" id="vwC-eb-EBq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backbround" translatesAutoresizingMaskIntoConstraints="NO" id="wLa-Z5-Hvv">
+                    <rect key="frame" x="0.0" y="21" width="375" height="646"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o91-fX-Tgs">
+                    <rect key="frame" x="0.0" y="20" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.67000000000000004" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="oXG-Ek-VWh"/>
+                    </constraints>
+                </view>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLY-pS-Uek">
+                    <rect key="frame" x="0.0" y="21" width="375" height="646"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zLY-pS-Uek" secondAttribute="bottom" id="2gy-r3-99g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wLa-Z5-Hvv" secondAttribute="trailing" id="6xI-g2-Nbq"/>
+                <constraint firstItem="wLa-Z5-Hvv" firstAttribute="top" secondItem="o91-fX-Tgs" secondAttribute="bottom" id="80S-YG-WTE"/>
+                <constraint firstItem="wLa-Z5-Hvv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9jM-lp-DAL"/>
+                <constraint firstItem="zLY-pS-Uek" firstAttribute="top" secondItem="o91-fX-Tgs" secondAttribute="top" constant="1" id="A06-ZX-iY3"/>
+                <constraint firstItem="zLY-pS-Uek" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DmN-rc-a2l"/>
+                <constraint firstItem="o91-fX-Tgs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fis-gc-jhh"/>
+                <constraint firstItem="o91-fX-Tgs" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="gCD-38-Okd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wLa-Z5-Hvv" secondAttribute="bottom" id="iYA-dW-jrP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zLY-pS-Uek" secondAttribute="trailing" id="ole-PB-62I"/>
+                <constraint firstItem="o91-fX-Tgs" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="qGj-6p-B1Y"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="133.59999999999999" y="116.49175412293854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backbround" width="375" height="667"/>
+    </resources>
+</document>
